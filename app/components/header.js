@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import '../styles/header.css';
-import React from 'react'
 
 function Header() {
   return (
