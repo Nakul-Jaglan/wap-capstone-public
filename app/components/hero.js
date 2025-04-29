@@ -22,7 +22,6 @@
 
 import React from "react";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import "../styles/hero.css";
 
 export default function Hero() {
