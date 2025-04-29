@@ -2,9 +2,9 @@
 import "./contact.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Form from "../components/form";
-import Map from "../components/map";
-import Detail from "../components/detail";
+import Form from "./components/form";
+import Map from "./components/map";
+import Detail from "./components/detail";
 
 export default function Contact() {
     return (

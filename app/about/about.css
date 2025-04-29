@@ -1,0 +1,142 @@
+.main-title{
+    font-size: 5em;
+    color: #333;
+    text-align: center;
+    margin: 2% 0;
+}
+
+.text-below-title{
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    padding: 0.2%;
+}
+
+.about-image{
+    width: 90%;
+    height: auto;
+    margin: 2% auto;
+    display: block;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.about-title{
+    font-size: 7em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.sub-about-container{
+    border-left: 2px solid #333;
+}
+
+.about-text{
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    padding: 0 5%;
+    padding-left: 10%;
+}
+
+.team-title{
+    font-size: 8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.team-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1%;
+    padding: 2%;
+    text-align: center;
+}
+
+.member-image{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+
+.member-name, .member-role{
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 1%;
+}
+
+.member-bio{
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    padding: 0 5%;
+}
+
+@media (max-width: 480px){
+    .main-title {
+        font-size: 2.5em;
+    }
+
+    .text-below-title {
+        font-size: 1.05em;
+        padding: 1%;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .about-title {
+        font-size: 2.5em;
+        margin: 0 0 5% 0;
+    }
+
+    .sub-about-container {
+        border-left: none;
+        padding: 0 0 10% 0;
+        border-bottom: 2px solid #333;
+    }
+
+    .about-text {
+        font-size: 1.5em;
+        padding: 0 5%;
+    }
+
+    .team-title {
+        font-size: 3em;
+        margin-bottom: 10%;
+    }
+
+    .team-cards {
+        grid-template-columns: 1fr;
+        gap: 5%;
+        margin-bottom: 50%;
+    }
+
+    .member-image {
+        width: 60%;
+    }
+
+    .member-name, .member-role {
+        font-size: 2em;
+    }
+
+    .member-bio {
+        font-size: 1em;
+    }
+}
