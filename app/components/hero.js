@@ -36,7 +36,7 @@ export default function Hero() {
     <section className="hero-section">
       <div
         className="hero-bg">
-          <img src="/hero-background.avif" className="hero-bg-img" alt="Meal Mate" />
+          <img src="/hero-background.png" className="hero-bg-img" alt="Meal Mate" />
           </div>
       {showText && (
         <div
