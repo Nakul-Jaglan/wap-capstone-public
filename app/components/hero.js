@@ -28,20 +28,17 @@ export default function Hero() {
   const [showText, setShowText] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowText(true), 800); // Wait for image fade-in
+    const timer = setTimeout(() => setShowText(true), 800);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <section className="hero-section">
-      <div
-        className="hero-bg">
-          <img src="/hero-background.png" className="hero-bg-img" alt="Meal Mate" />
-          </div>
+      <div className="hero-bg">
+        <img src="/hero-background.png" className="hero-bg-img" alt="Meal Mate" />
+      </div>
       {showText && (
-        <div
-          className="overlay"
-        >
+        <div className="overlay">
           <h1 className="main-title">Welcome to Meal Mate</h1>
           <p className="text-below-title">
             Your one-stop solution for meal planning and recipes.
