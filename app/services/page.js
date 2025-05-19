@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import './services.css'
-// import Gemini from '../components/gemini'
+import Gemini from '../components/gemini'
 
 function Services() {
     const [showText, setShowText] = useState(false);
@@ -45,7 +45,7 @@ function Services() {
                         )}
                     </section>
 
-                    {/* <Gemini/> */}
+                    <Gemini/>
                 </section>
             </main>
             <footer>
