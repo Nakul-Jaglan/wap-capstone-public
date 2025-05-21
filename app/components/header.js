@@ -78,7 +78,7 @@ function Header() {
         <Link href="/" className="link-myweb">Meal Mate</Link>
       </div>
       <label className="menu-icon" onClick={toggleMenu}>☰</label>
-      {isClient && (width > 768 || isMenuOpen) && (
+      {isClient && (width > 710 || isMenuOpen) && (
         <nav className='main-header-nav'>
           <Link href="/" className="link-nav">Home</Link>
           <Link href="/services" className="link-nav">Services</Link>

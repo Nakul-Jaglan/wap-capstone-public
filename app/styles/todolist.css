@@ -54,3 +54,66 @@
     width: 1.5em;
     height: 1.5em;
 }
+
+@media (max-width: 768px) {
+  .todo-label {
+    font-size: 1em;
+    gap: 0.3em;
+  }
+
+  .todo-list-item {
+    padding: 0.4em 0em;
+  }
+
+  .todo-checkbox {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+  }
+
+  .todo-list-btns {
+    gap: 0.3em;
+    padding-left: 1em;
+  }
+
+  .todo-btn {
+    font-size: 1em;
+  }
+
+  .amazon-logo, .blinkit-logo, .bigbasket-logo {
+    width: 1.2em;
+    height: 1.2em;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .todo-label {
+    font-size: 0.95em;
+    gap: 0.2em;
+  }
+
+  .todo-list-item {
+    padding: 0.3em 0em;
+  }
+
+  .todo-checkbox {
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 0.3em;
+  }
+
+  .todo-list-btns {
+    gap: 0.2em;
+    padding-left: 0.5em;
+  }
+
+  .todo-btn {
+    font-size: 0.8em;
+  }
+
+  .amazon-logo, .blinkit-logo, .bigbasket-logo {
+    width: 2em;
+    height: 2em;
+  }
+}

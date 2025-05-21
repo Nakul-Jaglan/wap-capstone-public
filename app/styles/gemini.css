@@ -198,3 +198,60 @@
         opacity: 0.6;
     }
 }
+
+@media (max-width: 768px) {
+    .gemini-section {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    .gemini-title {
+        font-size: 3.5em;
+    }
+
+    .gemini-text {
+        font-size: 1.5em;
+    }
+
+    .gemini-input {
+        font-size: 1.2em;
+    }
+
+    .gemini-btn, .gemini-reset-btn {
+        font-size: 1.2em;
+        padding: 0.75em 1.2em;
+    }
+
+    .recipe-results{
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gemini-section {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .gemini-title {
+        font-size: 3em;
+    }
+
+    .gemini-text {
+        font-size: 1.2em;
+    }
+
+    .gemini-input {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .gemini-btn, .gemini-reset-btn {
+        font-size: 1em;
+        padding: 0.9em 1em;
+    }
+    .ingredients-list ul, 
+    .instructions ol {
+        padding-left: 0;
+    }
+}
