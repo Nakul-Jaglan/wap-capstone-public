@@ -54,6 +54,14 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import '../styles/header.css';
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,6 +94,17 @@ function Header() {
           <Link href="/contact" className="link-nav">Contact</Link>
         </nav>
       )}
+      <ClerkProvider>
+        <div className='buttons-div'>  
+          <SignedOut>
+            <SignInButton className="sign-in" />
+            <SignUpButton className="sign-up" />
+          </SignedOut>
+          <SignedIn>
+            <UserButton className="user-button" />
+          </SignedIn>
+        </div>
+      </ClerkProvider>
     </section>
   );
 }

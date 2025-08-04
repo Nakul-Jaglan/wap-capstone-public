@@ -14,7 +14,7 @@ export async function POST(request) {
         const { prompt } = await request.json();
         const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
 
-        const promptText = `Generate the recipe for ${prompt} in a JSON format with a single key 'recipe'. The value of 'recipe' should be a single array of strings, where each string represents an ingredient and its quantity. If the recipe has multiple components, please indicate the component name at the beginning of the ingredient string (e.g., 'Filling: 1 cup lentils'). If the recipe has only one component, do not include the component name in the ingredient strings. and only provide json response nothing else. If item is unrecognizable, please say 'Dish Name is Invalid'.`;
+        const promptText = `Generate the recipe for ${prompt} in a JSON format with a single key 'recipe'. The value of 'recipe' should be a single array of strings, where each string represents an ingredient and its quantity. If the recipe has multiple components, please indicate the component name at the beginning of the ingredient string (e.g., 'Filling: 1 cup lentils'). If the recipe has only one component, do not include the component name in the ingredient strings. and only provide json response nothing else. If item is unrecognizable, please say 'Dish Name is Invalid'. And remember, I am a resident of India, so please use Indian English for the recipe and give Indian Ingredients.`;
 
         const result = await model.generateContent(promptText);
         const response = await result.response;

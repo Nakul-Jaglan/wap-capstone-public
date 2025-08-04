@@ -1,9 +1,9 @@
 .main-header{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 50px;
     background-color: #2D2D2D;
     border-bottom: 1px solid #dee2e6;
     color: #FFFFFF;
@@ -70,6 +70,29 @@
     color: #FFFFFF;
 }
 
+.buttons-div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sign-in, .sign-up{
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FFF8F0;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.sign-in:hover, .sign-up:hover{
+    background-color: #e0e0e0;
+    scale: 1.05;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
 @media (max-width: 710px) {
     .main-header-nav{
         position: fixed;
@@ -82,4 +105,18 @@
         display: block;
     }
 
+    .sign-in, .sign-up{
+        font-size: 1em;
+        padding: 5px 10px;
+        display: none;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .sign-in, .sign-up{
+        font-size: 1em;
+        padding: 5px 10px;
+        display: none;
+    }
 }
